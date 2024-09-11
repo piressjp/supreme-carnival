@@ -6,7 +6,10 @@ Introdução:
 
 - Projeto referente a atividade de faculdade na matéria Paradgimas e Complexidade de Algoritimos
 
-Stack: 
+Stack:
+- HTML
+- JavaScript
+- CSS
 - C#
 
 Developers:
