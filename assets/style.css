@@ -1,0 +1,45 @@
+main {
+    min-width: 100vh;
+}
+
+.h-70 {
+    min-height: 70vh !important;
+}
+
+body {
+    background-color: #e9ecef;
+}
+
+.navbar-dark {
+    background-color: #39414a !important;
+}
+
+.card-body {
+    background-color: #ffffff;
+    border-left: 5px solid #007bff;
+}
+
+.card-title {
+    color: #007bff;
+}
+
+footer {
+    background-color: #3f464e;
+    color: white;
+    position: fixed;
+    bottom: 0;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #007bff;
+    /* Coral */
+}
+
+li {
+    margin-bottom: 5px;
+}
