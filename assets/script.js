@@ -37,4 +37,4 @@ function nextContent() {
         currentIndex++;
         updateContent();
     }
-}
+    }
