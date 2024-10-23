@@ -1,68 +1,220 @@
 <DOCTYPE html>
-<html lang="en">
+    <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Programação OO</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Programação OO</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
 
-<body">
-    <!-- Cabeçalho -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" style="text-decoration: none;">Paradigma Orientada a Objetos</a>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="team.html" id="member">Membros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="presentation.html" id="presentation">POO - Apresentação</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="infos.html" id="infos">Infos</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- Conteúdo -->
-    <main>
-        <div class="container mt-5">
-            <div class="card shadow-lg h-70 mb-5">
-                <div class="card-body d-flex flex-column presentation">
-                    <h5 class="card-title" id="title">Conteúdo 1: Introdução ao paradigma de orientação a objetos.</h5>
-                    <p class="card-text mt-2" id="content">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut et officiis, magnam aliquid maiores hic. Distinctio, cumque. Quidem exercitationem culpa voluptates, quod sed repudiandae aliquid natus, quae ea ullam quo!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, nemo. Similique nisi ab illum numquam aut architecto beatae doloribus error id assumenda odio saepe maxime, cum quam temporibus sequi voluptate?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore esse veritatis quisquam odio perferendis ipsa. Rem saepe laboriosam fugit et distinctio, veritatis vel aperiam animi at, laborum ad consectetur sunt.
-                    </p>
-                    <div class="mt-auto d-flex gap-2 justify-content-end">
-                        <button class="btn btn-outline-primary" onclick="previousContent()">Anterior</button>
-                        <button class="btn btn-primary" onclick="nextContent()">Próxima</button>
+    <body">
+        <!-- Cabeçalho -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" style="text-decoration: none;">Paradigma Orientada a Objetos</a>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="team.html" id="member">Membros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="presentation.html" id="presentation">POO -
+                                    Apresentação</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="infos.html" id="infos">Infos</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div> 
-        </div>
-        
-    </main>
-    <!-- Rodapé -->
-    <footer class="text-white text-center py-3 w-100">
-        <div class="container">
-            &copy; 2024 Programação Orientada a Objetos.
-        </div>
-    </footer>
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="assets/script.js"></script>
-</body>
+            </nav>
+        </header>
+        <!-- Conteúdo -->
+        <main>
+            <div class="container mt-5">
+                <div class="card shadow-lg h-70 mb-5">
+                    <div class="card-body d-flex flex-column presentation">
+                        <h5 class="card-title" id="title">Paradigma de Orientação a Objetos.</h5>
 
-</html>
+                        <!-- Sobre o paradigma OO -->
+                        <div class="content ms-3">
+                            <h6 class="card-title mt-4" id="title">. O que é um Paradigma?</h6>
+                            <p class="card-text mt-2 ms-2">
+                                Um paradigma é um conjunto de práticas, padrões e conceitos que orientam a forma como um
+                                determinado campo de estudo ou prática é abordado. No contexto da programação, um
+                                paradigma
+                                define a maneira como os problemas são resolvidos e como o código é estruturado. Existem
+                                vários paradigmas de programação, como:
+
+                            <ul>
+                                <li>Programação Procedural</li>
+                                <li>Programação Funcional</li>
+                                <li>Programação Orientada a Objetos (POO)</li>
+                            </ul>
+                            </p>
+                            <h6 class="card-title mt-4" id="title">. O que é Orientação a Objetos?</h6>
+                            <p class="card-text mt-2 ms-2">
+                                A Orientação a Objetos (OO) é um paradigma de programação que utiliza "objetos" para
+                                representar dados e métodos que operam sobre esses dados. Os principais conceitos da POO
+                                incluem:
+
+                            <ul>
+                                <li>Classes: Estruturas que definem a forma e o comportamento dos objetos.</li>
+                                <li> Objetos: Instâncias de classes que contêm dados e métodos.</li>
+                                <li>
+                                    Encapsulamento: Protege os dados de acesso externo, permitindo que sejam
+                                    manipuladosapenas através de métodos definidos.
+                                </li>
+                                <li>
+                                    Herança: Permite que uma classe herde características de outra, promovendo a
+                                    reutilização de código.
+                                </li>
+                                <li>
+                                    Polimorfismo: Permite que métodos com o mesmo nome se comportem de maneira diferente
+                                    em classes diferentes.
+                                </li>
+                            </ul>
+
+                            <h6 class="card-title mt-4" id="title">. Características da Orientação a Objetos</h6>
+                            <ul>
+                                <li>Modularidade: O código é organizado em módulos (classes), facilitando a manutenção e
+                                    a
+                                    compreensão.</li>
+                                <li>Reutilização de Código: A herança permite que classes reutilizem código existente,
+                                    reduzindo a duplicação.</li>
+                                <li>Abstração: Permite que os programadores se concentrem em conceitos de alto nível,
+                                    ocultando detalhes complexos.</li>
+                                <li>Flexibilidade e Manutenção: O encapsulamento e a modularidade tornam o código mais
+                                    fácil de modificar e expandir.</li>
+                            </ul>
+                            </p>
+
+                            <h6 class="card-title mt-4" id="title">. Quando Surgiu a Orientação a Objetos?</h6>
+                            <p class="card-text mt-2 ms-2">
+                                A Orientação a Objetos começou a ganhar destaque na década de 1960, com a linguagem
+                                Simula, desenvolvida por Ole-Johan Dahl e Kristen Nygaard. No entanto, foi na década de
+                                1980 que a POO se popularizou com linguagens como Smalltalk e C++. Desde então, a POO se
+                                tornou um dos paradigmas mais utilizados na programação.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-lg h-70 mb-5">
+                    <div class="card-body d-flex flex-column presentation">
+
+                        <!-- Sobre a linguagem C# -->
+                        <h5 class="card-title" id="title">C# - Tudo sobre a linguagem</h5>
+                        <div class="content ms-3">
+                            <h6 class="card-title mt-4" id="title">. História da Linguagem C#</h6>
+                            <p class="card-text mt-2 ms-2">
+                            <ul>
+                                <li>Criação da linguagem: Desenvolvida pela Microsoft, liderada por Anders Hejlsberg,
+                                    que também tinha sido responsável pelo desenvolvimento de outras linguagens de
+                                    sucesso, como Turbo Pascal e Delphi. O primeiro lançamento oficial do C# ocorreu em
+                                    2000, juntamente com a primeira versão da plataforma .NET.</li>
+                                <li>Lançamento do C# 1.0: Em 2002, com a primeira versão do .NET Framework.</li>
+                                <li>C# 2.0 (2005): Introdução de genéricos, métodos anônimos e iteradores.</li>
+                                <li>C# 3.0 (2007): Linq (Language Integrated Query), expressões lambda, extensão de
+                                    métodos.</li>
+                                <li>C# 4.0 (2010): Tipos dinâmicos e parâmetros opcionais.</li>
+                                <li>C# 5.0 (2012): Assíncrono com async e await.</li>
+                                <li>C# 6.0 (2015): Melhorias na linguagem (expressões de membro, interpolação de
+                                    strings).</li>
+                                <li>C# 7.0 e 8.0 (2017-2019): Introdução de tuplas, correspondência de padrões.</li>
+                                <li>C# 9.0 e 10.0 (2020-2021): Record types, simplificação de sintaxe, mais suporte à
+                                    programação funcional.</li>
+                            </ul>
+                            </p>
+
+                            <h6 class="card-title mt-4" id="title">. Desenvolvimento e Lançamento:</h6>
+                            <p class="card-text mt-2 ms-2">
+                                A linguagem foi desenhada sob a liderança de Anders Hejlsberg, que também tinha
+                                sido responsável pelo desenvolvimento de outras linguagens de sucesso, como
+                                Turbo Pascal e Delphi. O primeiro lançamento oficial do C# ocorreu em 2000,
+                                juntamente com a primeira versão da plataforma .NET.
+                            </p>
+
+                            <h6 class="card-title mt-4" id="title">. Objetivo:</h6>
+                            <p class="card-text mt-2 ms-2">
+                                O C# foi desenvolvido com a intenção de oferecer uma sintaxe mais simples e
+                                segura em comparação ao C++ e de corrigir algumas das suas complexidades. A
+                                linguagem introduziu gerenciamento automático de memória por meio de coleta
+                                de lixo (garbage collection), além de mecanismos modernos de tratamento de
+                                exceções.
+                            </p>
+
+                            <h6 class="card-title mt-4" id="title">. Crescimento:</h6>
+                            <p class="card-text mt-2 ms-2">
+                                Desde seu lançamento, C# se tornou uma linguagem amplamente adotada e padronizada por
+                                órgãos como a ECMA e ISO. Hoje, é uma das linguagens principais usadas em aplicações
+                                desktop, web, jogos e nuvem.
+                            </p>
+
+                            <h6 class="card-title mt-4" id="title">. Evolução:</h6>
+                            <p class="card-text mt-2 ms-2">
+                                A linguagem continuou a evoluir com o tempo, adicionando recursos como programação
+                                assíncrona com async e await, tipos genéricos e expressões lambda, o que permitiu o
+                                desenvolvimento de aplicativos modernos e complexos com maior facilidade.
+                            </p>
+
+                            <h6 class="card-title mt-4" id="title">. Aplicações Práticas:</h6>
+                            <p class="card-text mt-2 ms-2">
+
+                            <ul>
+                                <li>Desenvolvimento Web: Uso com ASP.NET Core.</li>
+                                <li>Desenvolvimento Mobile: Uso com Xamarin/MAUI.</li>
+                                <li>Desenvolvimento de Jogos: Unity como principal engine utilizando C#.</li>
+                                <li>Cloud Computing: Integração com Microsoft Azure para aplicações em nuvem.</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-lg mb-5">
+                    <div class="card-body d-flex flex-column presentation">
+                        <!-- Conclusão -->
+                        <h5 class="card-title" id="title"> Conclusão - A Conexão entre Orientação a Objetos e C#
+                        </h5>
+                        <div class="content ms-3">
+                            <p class="card-text mt-2 ms-2">
+                                A orientação a objetos e a linguagem de programação C# marcaram um salto significativo
+                                no desenvolvimento de software, promovendo ferramentas poderosas e eficazes para lidar
+                                com problemas complexos. A orientação a objetos proporciona uma estrutura de
+                                encapsulamento, herança, abstração e polimorfismo que se assemelha ao mundo real,
+                                simplificando a criação de códigos modulares e reutilizáveis. Adotando e expandindo
+                                esses fundamentos, o código C# tornou-se um paradigma robusto, multifuncional e seguro,
+                                adequado para uma ampla variedade de aplicativos. As atualizações regulares do C# são
+                                uma prova de seu compromisso com a inovação e adaptabilidade às necessidades emergentes
+                                dos desenvolvedores. Em suma, a associação da OO e do C# não apenas melhora a eficiência
+                                e
+                                a manutenção do código, mas também dá aos programadores oportunidades adicionais para
+                                soluções mais sofisticadas e escaláveis.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+        <!-- Rodapé -->
+        <footer class="text-white text-center py-3 w-100">
+            <div class="container">
+                &copy; 2024 Programação Orientada a Objetos.
+            </div>
+        </footer>
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="assets/script.js"></script>
+        </body>
+
+    </html>
