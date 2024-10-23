@@ -1,9 +1,6 @@
 # Paradigma Orientado a Objetos
 
 Introdução:
-
-// TODO: Fazer introdução para descrever sobre o projeto.
-
 - Projeto referente a atividade de faculdade na matéria Paradgimas e Complexidade de Algoritimos
 
 Stack:
